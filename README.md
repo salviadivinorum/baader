@@ -10,7 +10,7 @@ Jedná se o čistě frontendovou aplikaci, kde není o .NET/C# žádná zmínka.
 
 
 Projekt lze otestovat takto - stáhnout ZIP, rozbalit do složky na HDD, otevřít index.html.
---------------------------------------------------------------
+-------
 
 21.5.2017, David Jaroš, Jeseník
 
