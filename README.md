@@ -8,10 +8,7 @@ V zadání bylo zabarvovat řádky: modře nejmladší, žlutě druhý nejmladš
 
 Jedná se o čistě frontendovou aplikaci, kde není o .NET/C# žádná zmínka. V mém řešení je použit pouze jazyk HTML5+CSS3+JavaScript (a jeho knihovna JQuery). Knihovnu AngularJS jsem nevyužil.
 
-21.5.2017
+21.5.2017, David Jaroš, Jeseník
 
-David Jaroš
-
-Jeseník
 
 
