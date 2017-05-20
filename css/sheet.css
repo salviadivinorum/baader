@@ -1,0 +1,19 @@
+/**
+** zmena pozadi barev u radku
+ */
+
+
+
+.change-background-blue {
+    background-color: lightblue;
+}
+
+
+.change-background-red {
+    background-color: lightcoral;
+}
+
+
+.change-background-yellow {
+    background-color: yellow;
+}
