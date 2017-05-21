@@ -157,14 +157,14 @@ $(document).ready(function () {
 
     }).data("kendoGrid");
 
-    // skryje 1. sloupec s ID sloupcem (pro testovaci ucely)
-    grid.hideColumn("ID");
+
+    grid.hideColumn("ID"); // skryje 1. sloupec s ID sloupce (urceno pro testovaci ucely)
 });
 
 
-// *****************************************************************
+// ********************************************************************
 // (JavaScript + JQuery) obsluha udalosti "onDataBound" na Kendo Gridu
-// ******************************************************************
+// ********************************************************************
 
 function onDataBound(e) {
     var grid = $("#grid").data("kendoGrid");
@@ -178,7 +178,6 @@ function onDataBound(e) {
     var prvni = 0;
     var druhy = 0;
     var posledni = 0;
-
 
 
 
@@ -266,4 +265,3 @@ function onDataBound(e) {
     ObarviElementy(radkyKobarveni, "change-background-yellow");
 
 }
-
