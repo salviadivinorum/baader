@@ -8,7 +8,7 @@ Podstata zadání: OBARVOVAT ŘÁDKY - modře nejmladší, žlutě druhý nejmla
 Jedná se o čistě frontendovou aplikaci HTML+CSS+JavaScript (+ funkce z JQuery). Knihovnu AngularJS jsem nevyužil.
 
 
-Projekt lze otestovat takto - stáhnout ZIP, rozbalit do složky na HDD, otevřít index.html.
+Projekt lze otestovat takto - stáhnout ZIP, rozbalit do složky na HDD, otevřít index.html. Pdrobnější popis řešení je uveden v souboru dokumentace.txt.
 
 
 21.5.2017, David Jaroš, Jeseník
