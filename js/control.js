@@ -1,6 +1,6 @@
 /**
  * Kontroler vytvoreny pouze z JS funkci (neco malo  z knihovny JQuery)
- * AngularJS knihovnu jsem vubec nepouzil
+ * AngularJS knihovnu jsem vubec nepouzil, MVC neni zvoleno
  */
 
 // vytvoreni testovacich dat
