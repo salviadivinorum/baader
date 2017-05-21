@@ -1,0 +1,76 @@
+﻿Dokumentace k úkolu Baader Šumperk 21.5.2017
+
+Webová aplikace, která používá Kendo UI Grid
+---------------------------------------------
+
+A) časový plán
+-----------
+úterý - pohovor ve firmě Baader vč. dopravy = 3hod
+středa - nalezení komponenty Kendo Grid, pochopení o co jde = 3hod
+pátek - vytvoření funkčního prototypu = 4hod
+sobota - vytvoření aplikace + testování + odladění chyb = 6hod
+neděle - sepsání této dokumentace + kosmetika kódu = 2hod
+
+celkem = 18hod
+---------------
+
+B) Programátorská dokumentace
+--------------------------
+Pokud jsemm pochopil zadání v obarvování řádků tabulky, následuje popis jak jsem postupoval při řešení úkolu.
+Aplikace byla vytvořen z trial verze JS komponenty Kendo UI Grid. Můj obslužný script používá pouze
+minimum funkcí z knihovny JQuery. Knihovna Angular JS není vůbec použita, nezvolil jsem architekturu MVC.
+
+1. Kendo Grid
+-------------
+Jádrem úkolu je JavaScriptový widget Kendo UI Grid od společnosti Telerik a vpodstatě jsem postupoval 
+podle hodně podrobné dokumentace na jejich web stránkách. Obsluhu Gridu řeší ovladač události dataBound.
+
+2. Obsluha komponenty
+---------------------
+Používám HTML kostru a v ní instanci Gridu v div elementu. Obslužný JavaScript jsem nazval control.js.
+Dodatečné stylování řádků pouze minimalistické v mém kaskádovém stylu sheet.css
+
+3. Princip obsluhy Gridu
+--------------------------
+a) Logika aplikace je napsaná v připojeném java scriptovém souboru control.js, v něm deklarována událost onDataBound,
+   moje třídící funkce a nastavení Kendo Grid komponenty (dle návodů výrobce)
+b) k ukládání záznámů (objektů) používám lokální úložiště prohlížeče localStorage jako pole JS objektů/JSON
+c) nejprve se do localStorage uloží testovací data - 20 řádků (pokud tam už nejsou uloženy z minulé session)
+d) CRUD operace s daty jsou v uloženy v proměnné dataSource
+e) obsluha změn v gridu v události dataBound - deklarovaná ve funkci OnDataBound
+f) nastavení vzhledu Gridu - dle návodů výrobce - v proměnné grid
+
+Ovladač události "dataBound" OnDataBound:
+1.) Uložím si řádky z tabulky do pomocného pole setrideneRadky, zároveň je setřídím vzestupně
+2.) Do proměnné prvni, druhy a posledni uložím hodnotu Věk - min, 2.min a max - z celé tabulky
+3.) K iteraci v poli data=grid.dataSource.data() - (tj. uložené řádky nesetříděně) - používám JQuery funkci each() 
+4.) Přes referenci - do proměnné radkyKobarveni - si uložím řádky s min, 2.min a max Věkem z tabulky (třikrát to dělám)
+5.) Po nalezení obarvuju vybrané řádky- červeně, pak modře, nakonec žlutě - tím, že 
+    přidám elementu třídní selektor, který mi můj CSS nastyluje.
+
+4. Závěr
+--------
+Snad jsem pochopil zadání úkolu v obarvování řádků tabulky dle sloupce Věk. Pokud ne, tak je mé
+řešení pouhým " kvantem bezradných abstrakcí" jak to nazval IT specialista z firmy NCR, tam jsem se fakt minul :-).
+Jedná se o frontend aplikaci. Doteď jsem řešil desktopové úlohy v .NET/C# a s Javascriptem jsem se úplně minimálně 
+(poslední semestr, vytvoření 1. vlastní stránky). Základy OOP jsou stejné, tak asi nezáleží na jazyku, neznalost syntaxe
+nakonec vždy vyřeší hodnej strejda google. Aplikace byla napsaná v PhpStormu (studentská licence).
+
+
+
+21.5.2017
+David Jaroš
+Jeseník
+
+
+
+
+
+
+
+
+
+
+
+
+
