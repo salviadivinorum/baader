@@ -6,9 +6,28 @@
 // vytvoreni testovacich dat
 function setTestData(){
     var testData = [
-        {ID: 1, Jmeno: "Adam", Prijmeni:"Zelený", Telefon:"758897421", Email:"adam@seznam.cz", Vek:"25"},
-        {ID: 2, Jmeno: "Ivan", Prijmeni:"Malak", Telefon:"690458712", Email:"ivan@seznam.cz", Vek:"20"},
-        {ID: 3, Jmeno: "Jana", Prijmeni:"Hloubavá", Telefon:"607457311", Email:"jana@seznam.cz", Vek:"40"},
+        {ID: 1, Jmeno: "Adam", Prijmeni:"Koumák", Telefon:"758897421", Email:"adam@seznam.cz", Vek:"11"},
+        {ID: 2, Jmeno: "Ivan", Prijmeni:"Hendler", Telefon:"690458712", Email:"ivan@seznam.cz", Vek:"20"},
+        {ID: 3, Jmeno: "Viktorie", Prijmeni:"Prvněsvětská", Telefon:"21458769", Email:"mrtvola@seznam.cz", Vek:"90"},
+        {ID: 4, Jmeno: "Ivana", Prijmeni:"Novotná", Telefon:"608975124", Email: "ivana@gmail.com", Vek:"14"},
+        {ID: 5, Jmeno: "Petra", Prijmeni:"Cikýrková", Telefon:"721487255", Email:"petra@centrum.cz", Vek:"49"},
+        {ID: 6, Jmeno: "Karel", Prijmeni:"Labour", Telefon:"585785621", Email:"jkarel@stranka.cz", Vek:"40"},
+        {ID: 7, Jmeno: "Tomáš", Prijmeni:"HNejedlý", Telefon:"658742150", Email:"tomá@seznam.cz", Vek:"15"},
+        {ID: 8, Jmeno: "Stařec", Prijmeni:"Amoře", Telefon:"61", Email:"stary@kmet.com", Vek:"88"},
+        {ID: 9, Jmeno: "Jana", Prijmeni:"Hloubavá", Telefon:"607457311", Email:"jana@seznam.cz", Vek:"40"},
+        {ID: 10, Jmeno: "Benjamín", Prijmeni:"Nevímek", Telefon:"6601601602", Email:"ahojda@seznam.cz", Vek:"11"},
+
+        {ID: 11, Jmeno: "Tosnad", Prijmeni:"Nemyslíšvážně", Telefon:"578612587", Email: "neblazni@gmail.com", Vek:"20"},
+        {ID: 12, Jmeno: "Jiří", Prijmeni:"Hlubač", Telefon:"607457587", Email:"jhlubac@omyl.cz", Vek:"18"},
+        {ID: 13, Jmeno: "Filip", Prijmeni:"Tovíjakdál", Telefon:"785655874", Email:"nebavi@seznam.cz", Vek:"14"},
+        {ID: 14, Jmeno: "Dita", Prijmeni:"Nakepová", Telefon:"698744521", Email:"nafoukana14@seznam.cz", Vek:"17"},
+        {ID: 15, Jmeno: "Jan", Prijmeni:"Posedlý", Telefon:"6547896321", Email:"jan.posedly@seznam.cz", Vek:"55"},
+        {ID: 16, Jmeno: "Simona", Prijmeni:"Královecká", Telefon:"607458741", Email:"simonecka@koukejte.us", Vek:"90"},
+        {ID: 17, Jmeno: "Jaroslav", Prijmeni:"Úlehla", Telefon:"777457311", Email:"juleh.la@seznam.cz", Vek:"43"},
+        {ID: 18, Jmeno: "Komár", Prijmeni:"Pichlavý", Telefon:"779457311", Email:"kmar.picha@houlen.com", Vek:"25"},
+        {ID: 19, Jmeno: "Ctibor", Prijmeni:"Veleba", Telefon:"756157311", Email:"ctiborlk@veleba.cz", Vek:"11"},
+        {ID: 20, Jmeno: "Tereza", Prijmeni:"Horskénová", Telefon:"751457311", Email:"terezka@koupaliste-ureky.cz", Vek:"71"}
+
     ];
     localStorage["grid_data"] = JSON.stringify(testData);
 }
@@ -66,10 +85,10 @@ $(document).ready(function () {
                 }
                 localStorage["grid_data"] = JSON.stringify(localData);
                 options.success(localData);
-            },
+            }
         },
 
-        pageSize: 10,
+        pageSize: 25,
         schema: {
             model: {
                 id: "ID",
@@ -132,9 +151,9 @@ $(document).ready(function () {
         editable  : {
             mode : "popup",
             window : {
-                title: "Upravit záznam o osobě",           // Localization for Edit in the popup window
+                title: "Upravit záznam o osobě"
             }
-        },
+        }
 
     }).data("kendoGrid");
 
@@ -166,11 +185,9 @@ function onDataBound(e) {
     // seradi radky do pomocneho pole
     function SeradRadkyVzestupne() {
 
-        var rows = e.sender.tbody.children();
-        for(var j=0; j<rows.length; j++){
-            var row = $(rows[j]);
-            var dataItem = e.sender.dataItem(row);
-            setrideneRadky.push(dataItem);
+        for (var i = 0; i < grid.dataSource.data().length; i++) {
+            var item = grid.dataSource.data()[i];
+            setrideneRadky.push(item);
         }
 
         // tridici metoda
