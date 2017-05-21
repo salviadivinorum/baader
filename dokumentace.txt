@@ -52,9 +52,9 @@ Ovladač události "dataBound" OnDataBound:
 --------
 Snad jsem pochopil zadání úkolu v obarvování řádků tabulky dle sloupce Věk. Pokud ne, tak je mé
 řešení pouhým " kvantem bezradných abstrakcí" jak to nazval IT specialista z firmy NCR, tam jsem se fakt minul :-).
-Jedná se o frontend aplikaci. Doteď jsem řešil desktopové úlohy v .NET/C# a s Javascriptem jsem se úplně minimálně 
-(poslední semestr, vytvoření 1. vlastní stránky). Základy OOP jsou stejné, tak asi nezáleží na jazyku, neznalost syntaxe
-nakonec vždy vyřeší hodnej strejda google. Aplikace byla napsaná v PhpStormu (studentská licence).
+Jedná se o frontend aplikaci. Doteď jsem řešil desktopové úlohy v .NET/C# a s Javascriptem jsem se setkal úplně minimálně 
+(poslední semestr = vytvoření 1. vlastní stránky). Základy OOP jsou stejné, tak asi nezáleží na jazyku, neznalosti 
+nakonec vždy vyřeší hodnej strejda Google. Aplikace byla napsaná v PhpStormu (studentská licence).
 
 
 
