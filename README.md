@@ -11,7 +11,7 @@ Podstata zadání: OBARVOVAT ŘÁDKY PODLE VĚKU ČLOVĚKA- modře nejmladší, 
 Jedná se o čistě frontendovou aplikaci HTML+CSS+JavaScript (+ funkce z JQuery). Knihovnu AngularJS jsem nevyužil.
 
 
-Projekt lze otestovat takto - stáhnout ZIP, rozbalit do složky na HDD, otevřít index.html. Povídání o tom jak jsem postupoval je uvedeno v souboru dokumentace.txt.
+Projekt lze otestovat takto - stáhnout ZIP, rozbalit do složky na HDD, otevřít index.html. Povídání o tom jak jsem postupoval je uvedeno v souboru dokumentace.txt. Aplikace funguje v prohížeči Chrome a Firefox. Z nějakého pro mě neznámého důvodu nefunguje v Microsoft Explorer a Microsoft Edge. Funkčnost v ostatních prohlížečích (Opera, Safari) jsem netestoval, ani v android verzích.
 
 
 21.5.2017, David Jaroš, Jeseník
