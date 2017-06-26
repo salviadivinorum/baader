@@ -16,5 +16,7 @@ Projekt lze otestovat takto - stáhnout ZIP, rozbalit do složky na HDD, otevř�
 
 21.5.2017, David Jaroš, Jeseník
 
+PS: Úkol splněn správně, pochopil jsem zadání úkolu. Do firmy jsem nebyl přijat. Hledali někoho zkušenějšího než jsem já.
+
 
 
