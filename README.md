@@ -1,8 +1,8 @@
 # Web app - identify youngest/oldest person
 
-Table contains 20 records of persons. The task is to COLOR THE LINES of grid by people age. YELLOW is youngest, RED is oldest person in database. After every table edit - KEEP COLORS ACTUAL. Databse is stored localy into PC localStorage.
+The table contains 20 records of people. The task is to COLOR THE LINES OF GRID according to the ages of the people. YELLOW is the youngest and red is the OLDEST person in the database. After every table edit, keep the colors up-to-date. The database is stored locally in the PC's local storage.
 
-Fronted only app written in HTML+CSS+JavaScript (+ functions from z JQuery), conatins Kendo UI Grid component, AngularJS is not used here. 
+Fronted only app written in HTML+CSS+JavaScript (+ functions from z JQuery), conatins Kendo UI Grid component, AngularJS is not used. 
 
 Run
 -------------------------
