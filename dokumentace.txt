@@ -1,22 +1,5 @@
-﻿Dokumentace k úkolu Baader Šumperk 21.5.2017
-
-Webová aplikace, která používá Kendo UI Grid
+Webová aplikace - Programátorská dokumentace
 ---------------------------------------------
-
-A) časový plán
------------
-úterý - pohovor ve firmě Baader vč. dopravy = 3hod
-středa - nalezení komponenty Kendo Grid, pochopení o co jde = 3hod
-pátek - vytvoření funkčního prototypu = 4hod
-sobota - vytvoření aplikace + testování + odladění chyb = 6hod
-neděle - sepsání této dokumentace + kosmetika kódu = 2hod
-
-celkem = 18hod
----------------
-
-B) Programátorská dokumentace
---------------------------
-Pokud jsemm pochopil zadání v obarvování řádků tabulky, následuje popis jak jsem postupoval při řešení úkolu.
 Aplikace byla vytvořen z trial verze JS komponenty Kendo UI Grid. Můj obslužný script používá pouze
 minimum funkcí z knihovny JQuery. Knihovna Angular JS není vůbec použita, nezvolil jsem architekturu MVC.
 
@@ -52,8 +35,6 @@ Ovladač události "dataBound" OnDataBound:
 --------
 Doteď jsem řešil desktopové úlohy v .NET/C# a s Javascriptem jsem se setkal úplně minimálně.
 Aplikace byla napsaná v PhpStormu (studentská licence).
-
-
 
 21.5.2017
 David Jaroš
