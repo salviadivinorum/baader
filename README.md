@@ -1,22 +1,19 @@
-# Úkol pro firmu Baader Šumperk
+# Web app - identify youngest/oldest person
 
-Jednoduchá webová aplikace, ve které je použita komponenta Kendo UI Grid, odkaz na výrobce http://demos.telerik.com/kendo-ui/grid/index
+Table contains 20 records of persons. The task is to COLOR THE LINES of grid by people age. YELLOW is youngest, RED is oldest person in database. After every table edit - KEEP COLORS ACTUAL. Databse is stored localy into PC localStorage.
 
-Snad jsem pochopil zadání úkolu :-)
+Fronted only app written in HTML+CSS+JavaScript (+ functions from z JQuery), conatins Kendo UI Grid component, AngularJS is not used here. 
 
+Run
+-------------------------
+Clone or Download ZIP file
 
-Tabulka (Grid) má 20 záznamů o lidech (jméno, příjmení, telefon, email, věk).
-Podstata zadání: OBARVOVAT ŘÁDKY PODLE VĚKU ČLOVĚKA- modře nejmladší, žlutě druhý nejmladší, červeně nejstarší člověk v tabulce (v Gridu). A vždy aktualizovat zabarvení po editaci tabulky. Záznamy jsou tedy editovatelné a ukládají se do localStorage. 
+Unzip
 
-Jedná se o čistě frontendovou aplikaci HTML+CSS+JavaScript (+ funkce z JQuery). Knihovnu AngularJS jsem nevyužil.
+Open index.html file
 
+Documentation
+--------------------------
+Can be found in dokumentace.txt
 
-Projekt lze otestovat takto - stáhnout ZIP, rozbalit do složky na HDD, otevřít index.html. Povídání o tom jak jsem postupoval je uvedeno v souboru dokumentace.txt. Aplikace funguje v prohížeči Chrome a Firefox. Z nějakého pro mě neznámého důvodu nefunguje v Microsoft Explorer a Microsoft Edge. Funkčnost v ostatních prohlížečích (Opera, Safari) jsem netestoval, ani v android verzích.
-
-
-21.5.2017, David Jaroš, Jeseník
-
-PS: Úkol splněn správně, pochopil jsem zadání úkolu. Do firmy jsem nebyl přijat. Hledali někoho zkušenějšího než jsem já.
-
-
-
+David Jaroš, 5/2017
