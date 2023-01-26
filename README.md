@@ -15,4 +15,4 @@ Documentation
 Can be found in dokumentace.txt\
 David Jaroš, 5/2017
 
-![alt text](https://github.com/salviadivinorum/baader/blob/master/baader%20preview%20screen.png)
+![alt text](https://github.com/salviadivinorum/baader/blob/master/screenshot.png)
